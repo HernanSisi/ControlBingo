@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuracion Bingo</title>
+    <link rel="stylesheet" href="styles/configuracion.css">
+</head>
+<body>
+    <main>
+        <div class="menu glass">
+            <div class="titulo-menu"><h1>🎰Configuracion del Bingo🎰</h1></div>
+            <form action="" id="form-configuracion">
+                <div class="form-opciones-configuracion">
+                    <label for="titulo-principal">Titulo Principal: </label>
+                    <input type="text" id="titulo-principal" name="titulo-principal" max="150" value="Lotería Familiar 2025 ● Gracias por su colaboración" style="grid-row: 1; grid-column: 2 / 4;">
+                    
+                    <label for="Logo-Izquierda">Logo Izquierda: </label>
+                    <input type="file" id="Logo-Izquierda" name="Logo-Izquierda-Titulo" accept=".png">
+                    <img id="previsualizar-izquierda" class="centro" style="height:8vh; width: auto;" src="images/Logo1.png" alt="Logo Izquierda del titulo">
+                    
+                    <label for="Logo-Derecha">Logo Derecha: </label>
+                    <input type="file" id="Logo-Derecha" name="Logo-Derecha-Titulo" accept=".png">
+                    <img id="previsualizar-Derecha" class="centro" style="height:8vh; width: auto;" src="images/Logo2.png" alt="Logo Derecha del titulo">
+                    
+                    <label for="activador-informacion-juego" style="grid-row: 4; grid-column: 1 / 3;">Mostrar informacion del juego (Linea/Bingo): </label>
+                    <input type="checkbox" class="centro" id="activador-informacion-juego" name="activador-informacion-juego" value=True>
+
+                    <!-- <label for="Color-numero-tablero" style="grid-row: 4; grid-column: 1 / 3;">Color de los numero en el tablero principal: </label>
+                    <input class="color  centro" type="color" id="Color-numero-tablero" name="Color-numero-tablero" value="#ffa07a" required>
+                    
+                    <label for="Color-numero-tablero" style="grid-row: 5; grid-column: 1 / 3;">Color de los numero en el tablero principal: </label>
+                    <input class="color  centro" type="color" id="Color-numero-tablero" name="Color-numero-tablero" value="#ffa500" required>
+                    
+                    <label for="Color-numero-tablero" style="grid-row: 6; grid-column: 1 / 3;">Color de los numero en el tablero principal: </label>
+                    <input class="color  centro" type="color" id="Color-numero-tablero" name="Color-numero-tablero" value="#90ee90" required>
+                    
+                    <label for="Color-numero-tablero" style="grid-row: 7; grid-column: 1 / 3;">Color de los numero en el tablero principal: </label>
+                    <input class="color  centro" type="color" id="Color-numero-tablero" name="Color-numero-tablero" value="#f08080" required> -->
+                </div>
+                <div class="form-botonera">
+                    <button type="submit" id="guardar-configuracion">Guardar Configuracion</button>
+                    <button type="button" id="volver-a-juego" onclick="window.location.href='index.html'">Volver al Juego</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/configuracion.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*% --------------HEADER-------------- */
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    padding: 0 1vh 0 1vh;
+    height: 10vh;
+    max-height: 10vh;
+    /* margin-top: 1vh; */
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+header >h1{
+    max-height: 10vh;
+    overflow-y: hidden;
+    line-height: 4.0vh;
+    font-size: 5vh;
+
+}
+.logo{
+    height: 8vh;        /* se ajusta a la altura */
+    width: auto;         /* mantiene proporción */
+}
+.titulo{
+    margin: 0;
+}
+
+/*% --------------MAIN-------------- */
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+/** --------------CUADRICULA-------------- */
+
+.cuadricula-numeros{
+    display: grid;
+    grid-template-rows: auto 10vh;
+    height: 90vh;
+    align-items: center;
+    justify-items: center; 
+}
+.cuadricula{
+    display: grid;
+    grid-template-columns: repeat(10,6vw);
+    grid-template-rows: repeat(9,8vh);
+    grid-gap: 5px;
+    align-items: center;
+}
+
+/** --------------NUMEROS-------------- */
+.numero{
+    width: 6vw;
+    height: 8vh;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    font-weight: bold;
+    user-select: none;
+}
+.numero-sin-salir{
+    background-color: #ffa07a;
+}
+.numero-sin-salir:hover{
+    background-color: #ffa500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+.numero-que-salio{
+    background-color: #90ee90;
+    /* text-decoration: line-through; */
+}
+.numero-que-salio:hover{
+    background-color: #f08080;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+
+}
+
+/** --------------INFORMACION DEL JUEGO-------------- */
+.informacion-juego{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 5px;
+}
+.informacion-jugada{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: default;
+}
+.informacion-juego h2{
+    margin: 0;
+}
+input[type="text"]{
+    font-size: max(2vw,1.5vh);
+    text-align: center;
+    border: none;
+    /* width: 80%; */
+}
+input[type="text"]:focus{
+    outline: none;
+    border: none;
+}
+.linea-texto, .bingo-texto{
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+/** -------------- Historial de numeros -------------- */
+.control-numero{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: -webkit-fill-available;
+}
+.numero-historico{
+    background-color: lightgrey;
+    width: 5vw;
+    height: 7vh;
+    font-size: 5vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.numero-historico:first-child{
+    background-color: lightgoldenrodyellow;
+}
+.historial-numeros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    overflow-y: auto;
+    /* height: 25vh; */
+    width: 30vw;
+    flex-wrap: wrap;
+    user-select: none;
+    align-content: flex-start;
+}
+.historial-texto{
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center;
+    margin: 4vh 0 1vh 0;
+}
+#ultimo-numero{
+    width: 19vw;
+    height: 17vh;
+    background-color: lightgoldenrodyellow;
+    font-size: 14vh;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 0 2vh 0;
+}
+#contenedor-ultimo-numero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contenedor-historial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/** -------------- Botonera -------------- */
+.botonera{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0 0 2vh;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+button:active{
+    background-color: dodgerblue;
+}
+.material-symbols-outlined {
+    font-size: 10vh;
+    user-select: none;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+
+}
+
+#configuracion-icono, #reinicio-incono{
+    font-size: 5vh;
+    line-height: normal;
+}
+
+
+

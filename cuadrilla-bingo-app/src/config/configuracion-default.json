@@ -1,0 +1,33 @@
+{
+    "TituloPrincipal": "Lotería Familiar 2025 ● Gracias por su colaboración",
+    "LogoIzquierda": "",
+    "LogoDerecha": "",
+    "InformacionJuego": true,
+    "Color":{
+        "Cuadricula":{
+            "NumeroSinSalir": "#ffffff",
+            "NumeroSinSalirHover": "#ffa500",
+            "NumeroQueSalio": "#90ee90",
+            "NumeroQueSalioHover": "#f08080",
+            "NumeroTexto": "#000000",
+            "NumeroTextoHover": "#ffffff"
+        },
+        "Historial":{
+            "UltimoNumero": "#ffffff",
+            "TextoUltimoNumero": "#000000",
+            "NumeroHistorial": "#ffffff",
+            "TextoNumeroHistorial": "#000000"
+        },
+        "Botonera":{
+            "Botones": "#1e90ff",
+            "BotonesHover": "deepskyblue",
+            "BotonesTexto": "#ffffff",
+            "BotonesTextoHover": "#ffffff"
+        },
+        "Fondo": "#ffffff",
+        "FondoTitulo": "#1e90ff",
+        "TextoTitulo": "#ffffff",
+        "TextoInformacionJuego": "#000000"
+    }
+
+}
