@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
     data = localStorage.getItem("titulo-principal");
     if (data !== null) document.getElementById("titulo-principal").value = data;
     data = localStorage.getItem("mostrar-informacion-juego");
-    if (data === 'true') {
+    if (data === 'true' || data === null) {
         document.getElementById("activador-informacion-juego").checked = true;
     } else {
         document.getElementById("activador-informacion-juego").checked = false;
