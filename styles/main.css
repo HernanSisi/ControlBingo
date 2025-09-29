@@ -229,5 +229,8 @@ button:active{
     line-height: normal;
 }
 
+.desactivado{
+    display: none;
+}
 
 

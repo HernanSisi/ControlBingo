@@ -92,4 +92,16 @@ function reiniciarJugada() {
 }
 document.getElementById("boton-reinicio").addEventListener("click", reiniciarJugada);
 
-
+//% aplicar configuracion
+window.addEventListener("load",function(){
+    data = localStorage.getItem("LogoIzquierda");
+    if (data) document.getElementById("logo-Izquierda").src = data;
+    data = localStorage.getItem("LogoDerecha");
+    if (data) document.getElementById("logo-Derecha").src = data;
+    data = localStorage.getItem("titulo-principal");
+    if (data !== null) document.getElementById("titulo-principal").textContent = data;
+    data = localStorage.getItem("mostrar-informacion-juego");
+    if (data === 'false') {
+        document.getElementById("informacion-del-juego").classList.add('desactivado');
+    }
+});
